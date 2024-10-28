@@ -30,5 +30,6 @@ float4 gl_fragcoord_fragment_main(FragmentIn in [[stage_in]],
     float pct = plot(v);
     col = (1.0 - pct) * col + pct * float3(1.0, 0.0, 0.0);
     
-    return float4(col, 1.0);
+    float c = sin(v.x) * sin(v.y);
+    return float4(c, c, c, 1.0);
 }
