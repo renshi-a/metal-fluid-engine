@@ -8,21 +8,22 @@
 #ifndef Frame_h
 #define Frame_h
 
-final struct Frame {
+struct Frame {
     unsigned int index = 0;
     double timeIntervalInSecounds = 1.0 / 60.0;
     
-    double timeInSeconds() const {
-        return index * timeIntervalInSecounds;
-    }
+    // コンストラクタ
+    Frame();
     
-    void advance() {
-        ++index;
-    }
+    double timeInSeconds() const { return index * timeIntervalInSecounds; }
     
-    void advance(unsigned int delta) {
-        index += delta;
-    }
+    void advance() { ++index; }
+    
+    void advance(int delta) { index += delta;}
+    
+    Frame& operator++();
+    
+    Frame operator++(int);
 };
 
 #endif /* Frame_h */

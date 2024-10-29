@@ -5,6 +5,7 @@
 //  Created by Renshi Asada on 2024/10/29.
 //
 
+#include "../Animation/Scene.h"
 #include "MTLCanvasViewController.h"
 
 #import <Foundation/Foundation.h>
@@ -32,13 +33,14 @@
     ]];
     
     mtkView.delegate = self;
+    mtkView.preferredFramesPerSecond = 60;
     
-    /// キャンバス初期化
+    [[Scene shared] setup: mtkView];
 }
 
 - (void)drawInMTKView:(nonnull MTKView *)view {
-    
-    
+    [[Scene shared] update];
+    [[Scene shared] draw: view];
 }
 
 - (void)mtkView:(nonnull MTKView *)view drawableSizeWillChange:(CGSize)size {

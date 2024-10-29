@@ -19,6 +19,7 @@
 		CCD581842CCFB84600359723 /* metal-fluid-engine */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			explicitFileTypes = {
+				Metal/Animation/Scene.m = sourcecode.cpp.objcpp;
 				Metal/Extention/MTLCanvasViewController.m = sourcecode.cpp.objcpp;
 			};
 			path = "metal-fluid-engine";
