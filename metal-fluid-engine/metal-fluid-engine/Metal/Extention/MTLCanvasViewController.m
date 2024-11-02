@@ -38,6 +38,10 @@
     [[Scene shared] setup: mtkView];
 }
 
+-(void)dealloc {
+    [[Scene shared] clear];
+}
+
 - (void)drawInMTKView:(nonnull MTKView *)view {
     [[Scene shared] update];
     [[Scene shared] draw: view];

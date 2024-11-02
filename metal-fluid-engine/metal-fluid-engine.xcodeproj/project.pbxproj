@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		CCD581B92CCFE47400359723 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD581B82CCFE47400359723 /* MetalKit.framework */; };
+		CCD581D72CD1E6A900359723 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCD581D62CD1E6A900359723 /* Metal.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CCD581822CCFB84600359723 /* metal-fluid-engine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metal-fluid-engine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD581B82CCFE47400359723 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		CCD581D62CD1E6A900359723 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -21,6 +23,8 @@
 			explicitFileTypes = {
 				Metal/Animation/Scene.m = sourcecode.cpp.objcpp;
 				Metal/Extention/MTLCanvasViewController.m = sourcecode.cpp.objcpp;
+				Metal/Renderer/Primitives/CircleRenderer.cpp = sourcecode.cpp.objcpp;
+				Metal/Renderer/SineAnimationRenderer.cpp = sourcecode.cpp.objcpp;
 			};
 			path = "metal-fluid-engine";
 			sourceTree = "<group>";
@@ -32,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCD581D72CD1E6A900359723 /* Metal.framework in Frameworks */,
 				CCD581B92CCFE47400359723 /* MetalKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +64,7 @@
 		CCD581B72CCFE47300359723 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CCD581D62CD1E6A900359723 /* Metal.framework */,
 				CCD581B82CCFE47400359723 /* MetalKit.framework */,
 			);
 			name = Frameworks;

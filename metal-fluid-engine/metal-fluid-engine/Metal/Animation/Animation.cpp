@@ -7,6 +7,13 @@
 
 #include "Animation.h"
 
+Animation::Animation() {
+}
+
+Animation::~Animation() {
+    
+}
+
 void Animation::update(const Frame& frame) {
     onUpdate(frame);
 }

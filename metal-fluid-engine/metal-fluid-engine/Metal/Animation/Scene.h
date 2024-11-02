@@ -10,7 +10,6 @@
 
 #import <Foundation/Foundation.h>
 
-#include "Frame.h"
 #include "Metal/Metal.h"
 #include "MetalKit/MetalKit.h"
 
@@ -24,6 +23,8 @@
 - (void)update;
 /// 描画する
 - (void)draw:(nonnull MTKView *)view;
+/// クリア
+- (void)clear;
 
 @end
 

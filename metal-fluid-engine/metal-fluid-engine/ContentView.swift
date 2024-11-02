@@ -12,6 +12,7 @@ struct ContentView: View {
         VStack {
             MTLView()
         }
+        .ignoresSafeArea(.all)
     }
 }
 

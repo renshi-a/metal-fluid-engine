@@ -13,7 +13,7 @@ struct Frame {
     double timeIntervalInSecounds = 1.0 / 60.0;
     
     // コンストラクタ
-    Frame();
+    Frame() {};
     
     double timeInSeconds() const { return index * timeIntervalInSecounds; }
     
